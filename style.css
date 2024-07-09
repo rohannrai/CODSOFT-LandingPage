@@ -1,0 +1,430 @@
+body {
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+
+
+.home-search {
+    background-color: rgb(20, 20, 20);
+    height: 7rem;
+    width: 21%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.home, .search {
+    color: grey;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.home {
+    padding-left: 1rem;
+}
+
+.search {
+    padding-left: 1.2rem;
+}
+
+.home:hover {
+    cursor: pointer;
+    color: rgb(240, 248, 255);
+    transition-duration: 0.5s;
+}
+
+.search:hover {
+    cursor: pointer;
+    color: rgb(240, 248, 255);
+    transition-duration: 0.5s;
+}
+
+.home>i, .search>i {
+    opacity: 0.8;
+}
+
+#search-bar {
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+}
+
+#home-bar {
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+}
+
+#circle {
+    height: 0.59rem;
+    width: 0.59rem;
+    border-radius: 50%;
+    background-color: inherit;
+    position: absolute;
+    top: 4.9rem;
+    left: 2rem;
+}
+
+.search>i {
+    font-size: 1.45rem;
+}
+
+#search-bar:checked + #label-search + #circle{
+    background-color: aliceblue;
+    transition-delay: 0.1s;
+}
+
+#search-bar:checked + #label-search > .search {
+    color: aliceblue;
+}
+
+#home-bar:checked + #label-home > .home {
+    color: rgb(240, 248, 255);
+}
+
+/* Nav Pannel */
+
+.nav-pannel {
+    background-color: rgb(20, 20, 20);
+    height: 37rem;
+    width: 20.5%;
+    border-radius: 0.5rem;
+    margin-top: 0.7rem;
+    padding-left: 0.5rem;
+}
+
+.nav-pannel .library-bar img {
+    padding-left: 0.3rem;
+    height: 1.2rem;
+    opacity: 0.5;
+}
+
+.nav-pannel .library-bar #library-heading {
+    font-size: 1.3rem;
+    color: grey;
+    margin-top: 0.7rem;
+    font-weight: 500;
+}
+
+.nav-pannel .library-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-pannel .library-bar .activity-btn {
+    display: flex;
+    flex-direction: row;
+    margin-block: 0.8rem;
+    margin-inline: 0.2rem;
+}
+
+.nav-pannel .library-bar .activity-btn div:nth-of-type(n) {
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+    color: grey;
+    padding-top: 0.3rem;
+    border-radius: 50%;
+}
+
+.nav-pannel .library-bar .activity-btn div:nth-of-type(n):hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0.1);
+    color: rgb(240, 248, 255, 0.8);
+    transition-duration: 0.7s;
+}
+
+.nav-pannel .library-bar #library-heading:hover {
+    cursor: pointer;
+    color: aliceblue;
+    transition-duration: 1s;
+}
+
+.nav-pannel .library-bar #library-heading:hover img {
+    opacity: 0.9;
+    transition-duration: 0.8s;
+}
+
+.nav-pannel .container {
+    height: 8rem;
+    width: 18rem;
+    background-color: rgb(128, 128, 128, 0.1);
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding-left: 0.9rem;
+    padding-top: 0.1rem;
+}
+
+.nav-pannel .container > h4 {
+    color: rgb(240, 248, 255, 0.9);
+    margin-bottom: -0.5rem;
+}
+
+.nav-pannel .container > h5 {
+    color: rgb(240, 248, 255, 0.7);
+    margin-bottom: 1rem;
+}
+
+.nav-pannel .container button {
+    padding-inline: 0.5rem;
+    padding-block: 0.3rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    background-color: rgb(240, 248, 255, 1);
+}
+
+.nav-pannel .container button:hover {
+    cursor: pointer;
+    background-color: rgb(240, 248, 255, 0.9);
+    transform: scale(1.02);
+}
+
+/* Main-area */
+
+.main-area {
+    background-color: rgb(20, 20, 20);
+    height: 98%;
+    width: 77.5%;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.main-area nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(128, 128, 128, 0.2);
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    position: fixed;
+    width: 75.4%;
+}
+
+.main-area nav .toggle-btn .back-btn {
+    height: 1.9rem;
+    width: 2.1rem;
+    background-color: rgb(0,0,0,0.8);
+    border-radius: 50%;
+    padding-top: 0.3rem;
+    padding-left: 0.2rem;
+    margin-right: 1rem;
+}
+
+.main-area nav .toggle-btn .forward-btn {
+    height: 1.9rem;
+    width: 1.8rem;
+    background-color: rgb(0,0,0,0.8);
+    border-radius: 50%;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+.main-area nav .other-btn #upgrade-btn {
+    padding-inline: 1rem;
+    border-radius: 15rem;
+    font-weight: bolder;
+    border: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-right: 1rem;
+}
+
+.main-area nav .other-btn #install-btn {
+    padding-inline: 1rem;
+    border-radius: 15rem;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    margin-right: 1rem;
+}
+
+.main-area nav .other-btn #profile-btn {
+    height: 1.6em;
+    width: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    padding-top: 0.4rem;
+    padding-left: 0.5rem;
+}
+
+.main-area nav .toggle-btn,
+.main-area nav .other-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-area nav .other-btn #upgrade-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.main-area nav .other-btn #install-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.main-area nav .other-btn #profile-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.main-area h2:nth-of-type(1) {
+    color: aliceblue;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+
+.main-area h2 {
+    color: aliceblue;
+    margin-left: 1rem;
+}
+
+.main-area .card-1 {
+    height: 12rem;
+    width: 8rem;
+    margin-left: 1rem;
+    background-color: rgb(128, 128, 128, 0.02);
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.main-area .card-1 img {
+    height: 7rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+}
+
+.main-area .card-1 #heading {
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.main-area .card-1 #text-area {
+    margin-top: -0.6rem;
+    margin-left: 0.2rem;
+    color: grey;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.main-area .card-1:hover {
+    cursor: pointer;
+    background-color: rgb(128, 128, 128, 0.15);
+    transition-duration: 0.4s;
+}
+
+.main-area .card-2, .main-area .card-3, .main-area .card-4, .main-area .card-5, .main-area .card-6, .main-area .card-1 {
+    height: 13rem;
+    width: 9rem;
+    margin-left: 1rem;
+    background-color: rgb(128, 128, 128, 0.02);
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.main-area .card-2 img, .main-area .card-3 img, .main-area .card-4 img, .main-area .card-5 img, .main-area .card-6 img, .main-area .card-1 img {
+    height: 8rem;
+    width: 9rem;
+    border-radius: 0.5rem;
+}
+
+.main-area .card-2 #heading, .main-area .card-3 #heading, .main-area .card-4 #heading, .main-area .card-5 #heading, .main-area .card-6 #heading, .main-area .card-1 #heading {
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.main-area .card-2 #text-area, .main-area .card-3 #text-area, .main-area .card-4 #text-area, .main-area .card-5 #text-area, .main-area .card-6 #text-area, .main-area .card-1 #text-area {
+    margin-top: -0.6rem;
+    margin-left: 0.2rem;
+    color: grey;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.main-area .card-2:hover, .main-area .card-3:hover, .main-area .card-4:hover, .main-area .card-5:hover, .main-area .card-6:hover, .main-area .card-1:hover {
+    cursor: pointer;
+    background-color: rgb(128, 128, 128, 0.15);
+    transition-duration: 0.4s;
+}
+
+.main-area .card-clust {
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width:1700px) {
+    .main-area .card-clust {
+        flex-wrap: wrap;
+    }
+}
+
+.playbar {
+    width: 100%;
+    position: fixed;
+    bottom: 0rem;
+    padding-block: -3rem;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.playbar .current-song {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.playbar .current-song img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.playbar .current-song #song-desc h4 {
+    color: aliceblue;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.playbar .current-song #song-desc h6 {
+    color: grey;
+    margin-left: 1rem;
+    margin-top: -1.2rem;
+}
+
+.playbar .controls .music-btn img {
+    transform: scale(0.2);
+}
+
+.playbar .controls {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.playbar .volume {
+    color: aliceblue;
+    align-self: center;
+    margin-right: 2rem;
+}
+
+.playbar .current-song:hover, .playbar .controls .music-btn img:hover, .playbar .volume:hover {
+    cursor: pointer;
+}
